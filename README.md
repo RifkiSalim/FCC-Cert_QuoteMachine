@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Random Quote Machine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is part of my entries to the FreeCodeCamp Front End Development Libraries Certification. It's a "Random Quote Machine" designed to be functionally similar to the [Random Quote Machine](https://random-quote-machine.freecodecamp.rocks/) example provided by FreeCodeCamp. It allows users to view random quotes with author information and share them on Twitter.
 
-In the project directory, you can run:
+### Stack
 
-### `npm start`
+- **Frontend Framework:** React
+- **Styling:** Bootstrap (extended with SASS)
+- **API Integration:** Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### UI Style
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Glassmorphism
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Display a random quote on page load.
+- Allow users to request a new random quote with a button click.
+- Display the author of the quote.
+- Share the quote on Twitter.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Build Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository to your local machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/RifkiSalim/FCC-Cert_QuoteMachine.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project folder.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install project dependencies.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Build the project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm run build
+   ```
 
-## Learn More
+5. Serve the app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm i -g serve
+   serve -s build
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. Enjoy a random quote with a stylish design!
 
-### Code Splitting
+### Development Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repository to your local machine.
 
-### Analyzing the Bundle Size
+   ```bash
+   git clone https://github.com/RifkiSalim/FCC-Cert_QuoteMachine.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Navigate to the project folder.
 
-### Making a Progressive Web App
+3. Install project dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm install
+   ```
 
-### Advanced Configuration
+4. Start the development server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm start
+   ```
 
-### Deployment
+5. Open your web browser and access the development server's URL (usually http://localhost:3000) to view and work on the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+Please consult [LICENSE.md](LICENSE.md) for information on how this project is licensed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or suggestions, please feel free to contact me.
+
+Cheers!<br>
+Rifki Salim
