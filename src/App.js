@@ -1,14 +1,25 @@
+// React Imports
 import React, { useEffect, useState } from "react";
+
+// External Libraries
+import axios from "axios";
+
+// Icons
 import { FaQuoteLeft, FaTwitter } from "react-icons/fa";
 import { FiRefreshCw } from "react-icons/fi";
+
+// Background
 import BlobsBG from "./assets/bg-blobs.svg";
-import axios from "axios";
-function App() {
+
+const App = () => {
+  // States
   const [isLoading, setIsLoading] = useState(false);
   const [quote, setQuote] = useState({
     body: "",
     author: "",
   });
+
+  // Helpers
   const getQuote = () => {
     setIsLoading(true);
     axios
@@ -27,10 +38,14 @@ function App() {
         setIsLoading(false);
       });
   };
+
+  // UseEffect for Component Load
   useEffect(() => {
     getQuote();
   }, []);
+
   return (
+    // Base Container
     <div
       className="container-fluid"
       style={{
@@ -44,6 +59,7 @@ function App() {
     >
       <div className="container d-flex flex-column w-100 h-100 align-items-center justify-content-center p-0">
         <div className="col-lg-10 col-12 p-2 align-items-center">
+          {/* Quote Card */}
           <div
             className="card rounded-3 shadow"
             id="quote-box"
@@ -98,6 +114,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* Copyright Text */}
         <span className="text-center text-white text-opacity-75">
           Design and Code by{" "}
           <a
@@ -113,6 +130,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
