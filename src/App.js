@@ -42,8 +42,8 @@ function App() {
         backgroundPosition: "center",
       }}
     >
-      <div className="container d-flex w-100 h-100 align-items-center justify-content-center p-0">
-        <div className="col-lg-10 col-12 p-2">
+      <div className="container d-flex flex-column w-100 h-100 align-items-center justify-content-center p-0">
+        <div className="col-lg-10 col-12 p-2 align-items-center">
           <div
             className="card rounded-3 shadow"
             id="quote-box"
@@ -98,6 +98,18 @@ function App() {
             </div>
           </div>
         </div>
+        <span className="text-center text-white text-opacity-75">
+          Design and Code by{" "}
+          <a
+            href="https://rifkisalim.com"
+            target="_blank"
+            rel="noreferrer"
+            className="text-white"
+          >
+            Rifki Salim
+          </a>
+          .
+        </span>
       </div>
     </div>
   );
